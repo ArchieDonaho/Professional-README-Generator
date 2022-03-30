@@ -133,8 +133,8 @@ function init() {
         //then generate the markdown
         .then(generateMarkdown)
         // then write the file using the data
-        .then(markDown => {
-            writeToFile('../dist/README.md', markDown);
+        .then(markDownContent => {
+            writeToFile('../dist/README.md', markDownContent);
         })
         .catch(error => {
             console.log(error);
