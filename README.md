@@ -25,3 +25,16 @@ THEN this is added to the section of the README entitled Questions, with instruc
 
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+
+
+
+when we run index.js,the user will be asked a series of questions relationg to:
+-title
+-description
+-installation instructions
+-usage information
+-contribution guidelines
+-test instructions
+-license
+-GitHub username
+-email adress
