@@ -17,7 +17,7 @@ const questions = [
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
@@ -30,7 +30,7 @@ const questions = [
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
@@ -43,7 +43,7 @@ const questions = [
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
@@ -56,7 +56,20 @@ const questions = [
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Enter the contribution information:',
+        validate: input => {
+            if(input){
+                return true;
+            } else {
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
@@ -69,37 +82,44 @@ const questions = [
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
-    }
-    ,
+    },
+    {
+        type: 'confirm',
+        name: 'confirmLicense',
+        message: 'Will your project have a license?',
+        default: false
+    },
     {
         type: 'list',
         name: 'license',
         message: 'Select a license for your application:',
         choices: [
-            'No License',
             'MIT',
             'GPL',
-            'Unlicense',
-            'CC',
-            '5',
-            '6',
-            '7',
-            '8'
-        ]
+            'BSD',
+        ],
+        //they will only be asked about the license if they selected "yes" prior
+        when: ({confirmLicense}) => {
+            if(confirmLicense){
+                return true;
+            } else {
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'username',
-        message: 'Enter your GitHub username:',
+        message: 'Enter your full GitHub username:',
         validate: input => {
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
@@ -107,12 +127,12 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your email adress:',
+        message: 'Enter your full email adress:',
         validate: input => {
             if(input){
                 return true;
             } else {
-                console.log("(Please enter a valid input)")
+                console.log("(This section cannot be blank)")
                 return false;
             }
         }
@@ -136,10 +156,10 @@ function init() {
         .then(markDownContent => {
             writeToFile('../dist/README.md', markDownContent);
         })
+        //and display errors if they exist
         .catch(error => {
             console.log(error);
         })
-    
 }
 
 // Function call to initialize app
