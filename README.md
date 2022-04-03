@@ -1,41 +1,42 @@
-# Professional README Generator Starter Code
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+# Professional README Generator
+
+![Screenshot](./assets/img/Screenshot.png)
+
+## Description
+
+This application will generate a readme after answering a number of prompts
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [Testing](#testing)
+- [Questions](#questions)
+
+## Installation
+
+The application is installed by downloading a copy from the GitHub page
+
+## Usage
+
+The application is used by answering promps related to different sections of the README, like: title, description, licencing information, testing information, etc/
+
+## Contribution
+
+Archie Donaho
+
+## Testing
+
+To test the application, a user must have Node.js installed and also have a local copy of the file. On the command line of choice, run "node index.js" and the promps will ask various questions. Afterwards a README file will be generated in the "dist" folder
 
 
-GIVEN a command-line application that accepts user input:
 
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+## Questions
 
-<!-- WHEN I enter my project title
-THEN this is displayed as the title of the README -->
+Have questions? feel free to reach me here:
 
-<!-- WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests -->
-
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-
-<!-- WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile -->
-
-<!-- WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions -->
-
-<!-- WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README -->
-
-
-
-when we run index.js,the user will be asked a series of questions relationg to:
--title
--description
--installation instructions
--usage information
--contribution guidelines
--test instructions
--license
--GitHub username
--email adress
+archied5150@gmail.com
+https://github.com/ArchieDonaho
 

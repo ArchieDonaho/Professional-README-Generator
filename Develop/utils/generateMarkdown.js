@@ -1,49 +1,29 @@
-// // TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(confirmLicense, license) {
-
-//   return  confirmLicense ? `![License](https://img.shields.io/badge/License-${license}-green.svg)` : ``;
-
-
-//   // if(confirmLicense){
-//   //   return `
-//   // ![License](https://img.shields.io/badge/License-${license}-green.svg)
-//   //   `;
-//   // } else {
-//   //   return ``;
-//   // }
-// }
-
-// ${renderLicenseBadge(confirmLicense, license)}
-
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Creates a function that returns the license link
 function renderLicenseLink(license) {
   switch(license){
     case "MIT":
+
       return `
   This application is covered under [MIT](https://opensource.org/licenses/MIT)
       `;
       break;
+
     case "GPL":
       return `
   This application is covered under [GPL](https://opensource.org/licenses/GPL-3.0)
       `;
       break;
+
     case "BSD":
       return `
   This application is covered under [BSD](https://opensource.org/licenses/0BSD)
       `;
       break;
-        }
 
-  return `
-  this is the license link
-  `;
+  }
 }
 
-// TODO: Create a function that returns the license section of README
+// Creates a function that returns the license section of README and the link
 // If there is no license, return an empty string
 function renderLicenseSection(confirmLicense, license) {
   if(confirmLicense){
@@ -57,10 +37,10 @@ function renderLicenseSection(confirmLicense, license) {
     }
 }
 
-// TODO: Create a function to generate markdown for README
+// Creates a function to generate markdown for README
 function generateMarkdown(data) {
   // destructure the data
-  console.log(data);
+  // console.log(data);
   const {title, description, install, usage, contribution, test, confirmLicense, license, username, email} = data;
   
   return `
@@ -77,7 +57,6 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
-- [Features](#features)
 - [Testing](#testing)
 ${confirmLicense ? `- [License](#license)` : ""}
 - [Questions](#questions)
@@ -94,7 +73,7 @@ ${usage}
 
 ${contribution}
 
-## Testsing
+## Testing
 
 ${test}
 

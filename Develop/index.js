@@ -1,13 +1,12 @@
-// TODO: Include packages needed for this application
-//import the node file system
 const { captureRejectionSymbol } = require('events');
+//import the node file system
 const fs = require('fs');
 //import inquirer
 const inquirer = require('inquirer');
 //import the markdown 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+// Creates an array of questions for user input
 const questions = [
     {
         type: 'input',
@@ -139,14 +138,14 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// Generates a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, error => {
         console.log("data written to file")
     } )
 }
 
-// TODO: Create a function to initialize app
+// Generates a function to initialize app
 function init() {
     //ask the questions
     inquirer.prompt(questions)

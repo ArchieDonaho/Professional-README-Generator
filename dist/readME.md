@@ -1,37 +1,36 @@
 
-# af
+# Professional README Generator
 
 
 
 ## Description
 
-asfd
+This application will generate a readme after answering a number of prompts
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
-- [Features](#features)
 - [Testing](#testing)
 
 - [Questions](#questions)
 
 ## Installation
 
-asdf
+The application is installed by downloading a copy from the GitHub page
 
 ## Usage
 
-asdf
+The application is used by answering promps related to different sections of the README, like: title, description, licencing information, testing information, etc/
 
 ## Contribution
 
-asdf
+Archie Donaho
 
-## Testsing
+## Testing
 
-dsf
+To test the application, a user must have Node.js installed and also have a local copy of the file. On the command line of choice, run "node index.js" and the promps will ask various questions. Afterwards a README file will be generated in the "dist" folder
 
 
 
@@ -39,6 +38,6 @@ dsf
 
 Have questions? feel free to reach me here:
 
-adsf
-https://github.com/daf
+archied5150@gmail.com
+https://github.com/ArchieDonaho
 
